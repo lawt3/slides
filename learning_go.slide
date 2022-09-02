@@ -1,0 +1,44 @@
+# Learning Go
+Summary and highlights
+
+Toby Law
+toby.law@anz.com
+
+## Recommended resources
+
+- A Tour of Go: <https://go.dev/tour/welcome/1>
+  - Effective Go: <https://go.dev/doc/effective_go>
+  - Go Doc Comments: <https://go.dev/doc/comment>
+- Code Review Comments: <https://github.com/golang/go/wiki/CodeReviewComments> (really, common mistakes)
+  - Test Comments: <https://github.com/golang/go/wiki/TestComments>
+
+## Main resource
+
+Learning Go by Jon Bodner (available on O'Reilly)
+
+.image learning-go/cover.jpeg _ 350
+
+## Preface
+
+- This book is about writing *idiomatic* Go.
+- Go is a 'boring' language — it's built for developer productivity.
+  - “One of the chief design goals for Go was to create a language that allowed you to write code efficiently. This meant having simple syntax and a fast compiler. It also led Go’s authors to reconsider code formatting”
+  - Innovations include `goroutines` and `channels`, `gofmt`, `interfaces` and more.
+- The Go runtime provides services like memory allocation, garbage collection, concurrency, and so on. It is compiled into every Go binary.
+  - Some companies now use Go as their primary scripting language, replacing languages like Python or Ruby or Bash.
+
+## Primitive types
+
+- Go has the primitive types you expect: `string`, `int`, `float`, and even complex numbers.
+- If you don't initialise a variable, it will take on the *zero value*.
+- There are a few different ways to declare variables:
+
+.code learning-go/code.go /START VAR OMIT/,/END VAR OMIT/
+
+- Constants in Go are special.
+  - They are *untyped* and are automatically converted at compile time depending on their usage.
+  - There is no way to enforce that a variable should be immutable.
+
+## Compound types
+
+Hi! Talk about `array`, `slice`, `map` and `struct` here.

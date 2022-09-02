@@ -1,3 +1,4 @@
 # Slides
 
-- **Learning Go**: notes on understanding the principles and ideas behind Go.
+- **Learning Go**: Summary and highlights from the book by Jon Bodner.
+- **gRPC**: An introduction to gRPC.
